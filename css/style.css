@@ -116,14 +116,18 @@ a{
  * Section Styles
 */
 
-section.intro, section.contact {
-  padding: 50px;
+section.intro {
+  padding: 50px 50px 10px 50px;
+}
+section.skills {
+  
+  padding: 50px 50px 50px 50px;
 }
 
 section.intro {
   background: #101420;
 }
-section.contact {
+section.skills {
   background: #101420;
 }
 
@@ -165,6 +169,34 @@ h1::selection {
   color: var(--neon-text-color);
 }
 
+.email {
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.email::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.email::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.footer a {
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.footer a::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.footer a::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
 /* Animate neon flicker */
 @keyframes flicker {
     
@@ -194,16 +226,30 @@ h1::selection {
     }    
 }
 
-a {
+.email {
   animation: flicker 1.5s infinite alternate;     
 }
 
-a::-moz-selection {
+.email ::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
 
-a::selection {
+.email::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.footer a{
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.footer a::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.footer a::selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
 }
@@ -308,4 +354,21 @@ input[type=submit] {
   font-size: 1.75rem;
   color: #d0f4f1;
 
+}
+
+.footer h2{
+  font-family: 'Ubuntu', cursive;
+  font-size: 15px;
+  text-align: left;
+  padding: 30px;
+}
+.footer{
+  background-color: #101420;
+  padding: 2px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+a {
+  text-decoration: none;
 }
