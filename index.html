@@ -1,105 +1,173 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" type="imagex"x-icon href="Nekumona_Logo.ico">
-    <link rel="apple-touch-icon" sizes="128x128" href="/images/Nekumonapng_Logo.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <title>Nekuso</title>
-    <meta name="description" content="Nekuso's Responsive Website">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/small.css" media="(max-width: 630px)">
-    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+    <style>
+        body {
+            padding-bottom: 90px;
+        }
+        .nes-progress{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
 
-  <body>
+    <nav style="padding:20px; border:1px solid #ccc; margin-bottom: 60px;">
+        <div class="container">
+            <h2><i class="nes-icon coin"></i>
+                Neku_Mona
+        </div>
+    </nav>
     
 
-    <div class="container">
-      
-      <a id="button"></a>
+    <div class="container" style="margin-bottom: 50px">
+        <div class="row">
+            <div class="col">
+                <i class="nes-bcrikko"></i>
+            </div>
 
-      <div class="hero">
-        <img src="images/Pixelart.gif" alt="Dr.Bubble">
-      </div>
-
-      <section class="intro">
-        <h1>Kaihzan - Nixxo C. Jamilla</h1>
-
-        <aside class="bmoright">
-        <img src="images/BMO.gif" alt="Solution">
-        </aside>
-
-        <p class="objective">OBJECTIVE</p>
-        <p>Seeking to leverage broad development experience and hands-on technical expertise in a challenging
-          role as a Full-stack Developer. Proven history of successful work with cross-functional teams. Seeking
-          to deliver project management excellence to the company.</p>
-        <p class="qualification">HIGHLIGHTS OF QUALIFICATIONS</p>
-        <div class="qualificationlist">
-          <p>Computer Literate<br>
-            Excellent English skills<br>
-            Strong Time Management<br>
-            Highly resourceful, objective and reliable<br>
-            High level of maturity and sense of responsibility</p>
+            <div class="col-sm-9 col-xs-12">
+                <div class="nes-balloon from-left">
+                    <p>Hello, This is everything about me!<i class="nes-icon is-small heart"></i></p>
+                </div>
+            </div>
         </div>
-        
-      </section>
-
-      <section class="skills">
-        <h2>Skills</h2>
-        <aside class="Techleft">
-          <img src="images/Tech.gif" alt="Tech">
-        </aside>
-
-        <p>
-          <img src="images/HMLTlogo.png">HTML<br>
-          <img src="images/CSS.png">CSS<br>
-          <img src="images/Javascript.png">JAVASCRIPT<br>
-          <img src="images/mysql.png">MYSQL<br>
-          <img src="images/python.png">PYTHON<br>
-          <img src="images/Csharp.png">C++, C#
-        </p>
-        <p>Email: <a class="email" href="mailto:nixxojam@gmail.com">nixxojam@gmail.com</a></p>
-        
-      </section>
-
-      <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.1384330915625!2d123.29181941478886!3d9.320999893318621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab6f05c071aefd%3A0xc58c190077050815!2s033%20St%20Michael%20St%2C%20Dumaguete%2C%20Negros%20Oriental!5e0!3m2!1sen!2sph!4v1635354819255!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <iframe width="600" height="450" src="https://www.youtube.com/embed/TZCVmE1ITgM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-
-      <div class="containercount">
-        <div id="countdown">
-          
-          <p class="Event">Countdown to NekuMona Day</p>
-          <ul>
-            <li><span id="days"></span>days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-          </ul>
-        </div>
-      </div>
-      <section class="form">
-        <h1 class="info">Suggestions</h1>
-      <form class="fill">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">E-Mail:</label>
-        <input type="text" id="email" name="email"><br>
-        <label for="com">Comment</label>
-        <input type="text" id="comment" name="comment"><br>
-        <input type="submit" value="Submit">
-        </form>
-      </section>
-      <section class="footer">
-        <h2>Created by <a href="https://www.facebook.com/Nixxokaihz" target="blank">@Nekuso</a> | Special Thanks to <a href="https://www.facebook.com/itslgakamona" target="blank">@Mona</a></h2>
-      </section>
-
-      <script src="timer.js"></script>
-      
     </div>
-  </body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+
+                <!-- What I do -->
+                <div class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px;">
+                    <h3 class="title">What I do</h3>
+                    <div>
+                        <div class="lists">
+                            <ul class="nes-list is-circle">
+                                <li>Web Developer</li>
+                                <li>Web Designer</li>
+                                <li>App Developer</li>
+                                <li>Student</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Networthies -->
+                <div class="nes-container with-title is-dark" style="margin-top: 50px; margin-bottom: 50px;">
+                    <h3 class="title">Networthies</h3>
+                    <div>
+                        <i class="nes-icon is-small trophy"></i>
+                        Codecademy Pro Member
+                    </div>
+                </div>
+
+                <!-- Socials -->
+                <div class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px;">
+                    <h3 class="title">My Socials</h3>
+                    <a href="">
+                        <i class="nes-icon twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="nes-icon facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="nes-icon github"></i>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <!-- Frontend Knowledge -->
+                <div class="nes-container with-title" style="margin-top: 40px;">
+                    <h3 class="title">Frontend Knowledge</h3>
+
+                    <div class="row">
+
+                        <div class="col-sm-4 col-xs-12">HTML[5]</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="80" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">CSS[3]</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="70" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">Javascript</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="40" max="100">
+                            </progress>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Backend Knowledge -->
+                <div class="nes-container with-title is-dark" style="margin-top: 40px;">
+                    <h3 class="title">Backend Knowledge</h3>
+
+                    <div class="row">
+
+                        <div class="col-sm-4 col-xs-12">Python[3]</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">PHP[7]</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="50" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">MySQL</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="80" max="100">
+                            </progress>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Recent Projects -->
+                <div class="nes-container with-title" style="margin-top: 40px;">
+                    <h3 class="title">Recent Projects</h3>
+
+                    <div>
+                        <i class="nes-icon github is-small"></i>
+                        LearnIT
+                    </div>
+                    
+                    <div>
+                        <i class="nes-icon github is-small"></i>
+                        Villa Website
+                    </div>
+
+                    <div>
+                        <i class="nes-icon github is-small"></i>
+                        Real-estate Website
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
